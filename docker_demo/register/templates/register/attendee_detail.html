@@ -1,0 +1,13 @@
+{% extends 'register/base.html' %}
+{% block content %}
+    <div>
+        {% if attendee.published_date %}
+            <div>
+                {{ attendee.signed_up }}
+            </div>
+        {% endif %}
+        <p>{{ attendee.first_name }}</p>
+        <p>{{ attendee.surname }}</p>
+        <p>{{ attendee.company }}</p>
+    </div>
+{% endblock %}

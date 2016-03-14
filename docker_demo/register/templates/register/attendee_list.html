@@ -1,0 +1,13 @@
+{% extends 'register/base.html' %}
+{% block content %}
+    <a href="{% url 'attendee_new' %}">Register Here</a>
+    {% for attendee in attendees %}
+        <div class = "post">
+            <p><a href="{% url 'attendee_detail' pk=attendee.pk %}">{{ attendee.first_name }} {{ attendee.surname}}</a>
+            <p>{{ attendee.company}}</p>  
+             <div>
+                {{ attendee.signed_up }}
+            </div>    
+        </div>
+    {% endfor %}
+{% endblock content %}

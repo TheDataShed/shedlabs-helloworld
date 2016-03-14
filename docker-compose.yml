@@ -1,0 +1,13 @@
+db:
+  image: datashed/db
+  command: /bin/bash -c "export TERM=dumb && export MYSQL_ROOT_PASSWORD=password && ./entrypoint.sh mysqld"
+  ports: 
+    - "3306:3306"
+web:
+  image: datashed/web_demo
+  command: /bin/bash -c "sleep 2 && ./run-django.sh"
+  ports:
+    - "8000:8000"
+    - "9181:9181"
+  links:
+    - db
