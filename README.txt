@@ -59,7 +59,7 @@ Other Docker Commands
 
 	docker rmi $(docker images -q) - delete all docker images
 
-	docker run -ti {container name} /bin/bash - start bash prompt on a new container
+	docker run -ti {image name} /bin/bash - start bash prompt on a new container
 
 	docker exec -ti {container name} /bin/bash - start bash prompt on existing container
 
