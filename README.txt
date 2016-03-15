@@ -2,6 +2,8 @@ Welcome to the DataShed Apache Spark Labs 'Hello-World' docker program.
 
 Here's what you need to do to get started...
 
+Please ensure HyperV is not running on your laptop.
+
 Windows
 
 	1) Download Docker here: https://docs.docker.com/windows/step_one/
