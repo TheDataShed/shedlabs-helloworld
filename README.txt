@@ -2,9 +2,9 @@ Welcome to the DataShed Apache Spark Labs 'Hello-World' docker program.
 
 Here's what you need to do to get started...
 
-Please ensure HyperV is not running on your laptop.
+Please ensure HyperV/VMWare is not running on your laptop.
 
-Windows
+Windows & OS X
 
 	1) Download Docker here: https://docs.docker.com/windows/step_one/
 	   I had some issues connecting to the Virtual Box VM via the Dcoker Quickstart Terminal.
@@ -19,9 +19,7 @@ Windows
 
 	4) Open the Docker Quickstart Terminal and cd to the 'shedlabs-hello-world' directory
 
-	5) Enter these commands from the root of the project:
-
-		docker build -t datashed/web_demo . (don't forget the full stop!)
+	5) Enter this command from the root of the project:
 		
 		docker-compose-up
 

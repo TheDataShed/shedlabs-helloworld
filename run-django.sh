@@ -1,1 +1,0 @@
-/bin/bash -c '/usr/local/bin/python /code/docker_demo/manage.py migrate && /usr/local/bin/python /code/docker_demo/manage.py runserver 0.0.0.0:8000'

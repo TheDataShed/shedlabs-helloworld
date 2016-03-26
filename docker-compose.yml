@@ -1,10 +1,10 @@
 db:
-  image: datashed/db
+  build: ./mariadb
   command: /bin/bash -c "export TERM=dumb && export MYSQL_ROOT_PASSWORD=password && ./entrypoint.sh mysqld"
   ports: 
     - "3306:3306"
 web:
-  image: datashed/web_demo
+  build: ./docker_demo
   command: /bin/bash -c "sleep 2 && ./run-django.sh"
   ports:
     - "8000:8000"

@@ -2,25 +2,146 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-    <link href="http://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="{% static 'css/register.css' %}">
+    <!-- SET: STYLESHEET -->
+    <link rel="stylesheet" type="text/css" href="http://www.thedatashed.co.uk/wp-content/themes/datashed/css/bootstrap.css">
+    <link href="http://www.thedatashed.co.uk/wp-content/themes/datashed/css/style.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="stylesheet" type="text/css" href="http://www.thedatashed.co.uk/wp-content/themes/datashed/css/jquery.bxslider.css">
+    <link rel="stylesheet" type="text/css" href="http://www.thedatashed.co.uk/wp-content/themes/datashed/css/coda-slider.css">
+    <link rel="stylesheet" type="text/css" href="http://www.thedatashed.co.uk/wp-content/themes/datashed/css/menu.css">
+    <link href="http://www.thedatashed.co.uk/wp-content/themes/datashed/css/responsive.css" rel="stylesheet" type="text/css"
+    media="all">
 </head>
 
-<body>
-    <br/>
-    <div>
-        <div class="page-header">
-           <h1><a href="{% url 'attendee_list' %}"> DataShed Labs - Apache Spark</a></h1>          
+<div class="header col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <div class="container">
+        <div class="row">
+            <div class="logo">
+                <a href="#top"><img src="http://www.thedatashed.co.uk/wp-content/themes/datashed/images/logo.png" width="134" height="68"
+                    alt="logo"></a>
+            </div>
+            <div class="nav">
+                <div class="collapse navbar-collapse" id="example-navbar-collapse">
+
+
+
+                    <ul class="col-xs-12">
+
+                        <li><a href="http://www.thedatashed.co.uk/"> MAIN WEBSITE</a></li>
+                        <li><a href="http://www.thedatashed.co.uk/blog"> BLOG</a></li>
+
+                        <li><a href="/attendee/new"> Register</a></li>
+                    </ul>
+
+
+
+
+                    <div class="clear"></div>
+
+                </div>
+                <button type="button" class="navbar-toggle cmn-toggle-switch cmn-toggle-switch__htx" data-toggle="collapse" data-target="#example-navbar-collapse">
+                    <span class="sr-only">MENU</span>
+                    <small></small>
+                </button>
+                <div class="clear"></div>
+            </div>
+            <div class="clear"></div>
         </div>
-        <div class="content container">
-            <div class="row">
-                <div class="col-md-8">
-                {% block content %}
-                {% endblock content %}
+    </div>
+</div>
+<div class="clear"></div>
+<div class="welcome_block_main col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <div class="container">
+        <div class="row">
+            <div class="welcome_block col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="col-lg-5 col-md-45 col-sm-5 col-xs-5">
+
+
+
+                    <h1>WELCOME TO THE DATASHED LABS</h1>
+                    <br>
+                    <p>Congratulations. You've successfully installed the Docker Toolbox, and set this site running.
+                     </p>
+
+                    <p>If you can register using the links on this page, then you're
+                        as ready as you'll ever be!</p>
+                        
+                    <p>Please let us know you're ready to go by <a href="mailto:hello@thedatashed.co.uk?Subject=Ready%20to%go!" target="_top" style="color: #ff9400">emailing</a> or <a href="http://ctt.ec/xnME9"  style="color: #ff9400" target="_blank">tweeting</a> us! </p>
+                </div>
+
+                <div class="col-lg-7 col-md-7 col-sm-7 col-xs-7">
+                    <img src="http://www.thedatashed.co.uk/wp-content/themes/datashed/images/datashed.png">
+                </div>
+
+
+
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="clear"></div>
+
+<div class="grey1 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <em id="target1"></em>
+</div>
+<div class="clear"></div>
+<div class="grey1_block_main col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <div class="container">
+        <div class="row">
+            <div class="grey1_block col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="col-lg-7 col-md-7 col-sm-7 col-xs-7">
+
+
+                    <img width="416" height="387" src="http://www.thedatashed.co.uk/wp-content/uploads/2015/10/whatisdatashed.png" class="attachment-what-is-a-datashed size-what-is-a-datashed wp-post-image"
+                    alt="whatisdatashed" srcset="http://www.thedatashed.co.uk/wp-content/uploads/2015/10/whatisdatashed-300x279.png 300w, http://www.thedatashed.co.uk/wp-content/uploads/2015/10/whatisdatashed.png 416w"
+                    sizes="(max-width: 416px) 100vw, 416px" />
+
+
+
+                </div>
+
+                <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
+
+
+                    <div class="page-header">
+                        <h1><a href="{% url 'attendee_list' %}"> </a></h1>
+                    </div>
+                    <div class="content container">
+                        <div class="row">
+                            <div class="col-md-8">
+                                {% block content %} {% endblock content %}
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="clear"></div>
                 </div>
             </div>
         </div>
-</body>
+    </div>
+</div>
+
+    <!-- footer starts -->
+    <div class="footer col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="container">
+        	<div class="row">
+	        	
+	        	          	  <div class="logo"><a href="#top" class="logo2"><img src="http://www.thedatashed.co.uk/wp-content/themes/datashed/images/logo.png" width="134" height="68" alt="logo"></a></div>
+
+                <div class="footer_in">
+                   <div class="footer_right"><a href="http://www.thedatashed.co.uk/privacy-policy"> PRIVACY POLICY </a> | <a href="#top">TOP</a></div>
+                                           <div class="clear"></div>
+
+                   
+                   <div class="footer_small"> The Data Shed Limited is a limited company registered in England and Wales. <br>Company Registration No. 8005721 Registered
+Offices: 93-99 Suite 3 2nd Floor Mabgate Business Centre, Mabgate, Leeds, LS9 7DR</div>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer ends -->
+
 </html>
