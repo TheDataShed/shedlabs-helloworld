@@ -37,12 +37,10 @@ Linux (Ubuntu)
 
 	3) Install Git 'apt-get install git' (if not running Ubuntu find install command here: https://git-scm.com/download/linux)
 
-	4) Clone the Datashed Labs repo with this URL https://the-datashed.visualstudio.com/DefaultCollection/_git/DataShed%20Labs
+	4) Clone this repo
 
 	5) Enter these commands from the root of the project:
-
-		docker build -t datashed/web_demo . (don't forget the full stop!)
-		
+    
 		docker-compose-up
 
 	That should be it. You now need to find the ip docker machine is running on and go to port 8000 in a browser i.e 192.168.99.100:8000.
