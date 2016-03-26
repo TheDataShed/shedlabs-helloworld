@@ -15,9 +15,9 @@ Windows & OS X
 
 	2) If you do not have Git for Windows download it here: https://git-scm.com/download/win
 
-	3) Clone the Datashed Labs repo with this URL https://the-datashed.visualstudio.com/DefaultCollection/_git/DataShed%20Labs
+	3) Clone this repository
 
-	4) Open the Docker Quickstart Terminal and cd to the 'shedlabs-hello-world' directory
+	4) Open the Docker Quickstart Terminal and navigate to the cloned repository
 
 	5) Enter this command from the root of the project:
 		
