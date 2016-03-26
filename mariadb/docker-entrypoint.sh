@@ -19,7 +19,6 @@ if [ "$1" = 'mysqld' ]; then
 		fi
 		
 		
-		
 		tempSqlFile='/tmp/change_passwd.sql'
 		cat > "$tempSqlFile" <<-EOSQL
 			
