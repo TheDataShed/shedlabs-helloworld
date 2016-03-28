@@ -21,7 +21,7 @@ Windows & OS X
 
 	5) Enter this command from the root of the project:
 		
-		docker-compose-up
+		docker-compose up
 
 	That should be it. You now need to find the ip docker machine is running on and go to port 8000 in a browser i.e 192.168.99.100:8000.
 	You can find it at the top of the terminal under the image of the Docker whale. OR you can run
@@ -41,7 +41,7 @@ Linux (Ubuntu)
 
 	5) Enter these commands from the root of the project:
     
-		docker-compose-up
+		docker-compose up
 
 	That should be it. You now need to find the ip docker machine is running on and go to port 8000 in a browser i.e 192.168.99.100:8000.
 	You can find it at the top of the terminal under the image of the Docker whale. OR you can run
