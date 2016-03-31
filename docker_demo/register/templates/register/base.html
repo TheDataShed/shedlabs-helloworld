@@ -29,7 +29,8 @@
                         <li><a href="http://www.thedatashed.co.uk/"> MAIN WEBSITE</a></li>
                         <li><a href="http://www.thedatashed.co.uk/blog"> BLOG</a></li>
 
-                        <li><a href="/attendee/new"> Register</a></li>
+                        <li><a href="{% url 'attendee_new' %}"> Register</a></li>
+                        <li><a href="{% url 'attendee_list' %}"> Who Is Attending</a></li>
                     </ul>
 
 
@@ -105,7 +106,7 @@
 
 
                     <div class="page-header">
-                        <h1><a href="{% url 'attendee_list' %}"> Register here</a></h1>
+                        <h1><a href="{% url 'attendee_new' %}"> Register here</a></h1>
                     </div>
                     <div class="content container">
                         <div class="row">
